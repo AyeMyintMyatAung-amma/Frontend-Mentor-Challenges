@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution-url]()
-- Live Site URL: [live-site-url]()
+- Solution URL: [solution-on-github](https://github.com/AMyintMyatAung/Frontend-Mentor-Challenges/tree/main/results-summary-component)
+- Live Site URL: [live-site-on-netlify](https://main--preeminent-begonia-07fe3c.netlify.app/results-summary-component/index.html)
 
 ## My process
 
