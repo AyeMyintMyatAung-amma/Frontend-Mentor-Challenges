@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font -->
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lightGray: "#d6e2f0",
+              grayishBlue: "#7b879d",
+              darkBlue: "#1f3251",
+            },
+            fontFamily: {
+              sans: ["Outfit", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="w-full h-screen bg-lightGray flex flex-col items-center justify-center">
+    <div class="card bg-white w-80 min-h-max p-5 rounded-2xl shadow-lg">
+      <img
+        src="./images/image-qr-code.png"
+        alt="image-qr-code"
+        class="rounded-2xl"
+      />
+      <div class="px-2 py-3">
+        <h3 class="text-center text-darkBlue text-xl font-bold tracking-wide">
+          Improve your front-end skills by building projects
+        </h3>
+        <p class="text-center text-grayishBlue text-md mt-3">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
+
+    <div class="attribution text-center p-5">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-[#3e52a3]"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/AMyintMyatAung" target="_blank" class="text-[#3e52a3]">NightOwl</a>.
+    </div>
+  </body>
+</html>
