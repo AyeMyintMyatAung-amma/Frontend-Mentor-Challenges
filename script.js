@@ -8,8 +8,8 @@ let projects = [
   {
     name: "qr-code-component",
     thumbnail: "./qr-code-component/design/desktop-design.png",
-    solution: "",
-    live: "",
+    solution: "https://github.com/AMyintMyatAung/Frontend-Mentor-Challenges/tree/main/qr-code-component",
+    live: "./qr-code-component/index.html",
   },
 ];
 
