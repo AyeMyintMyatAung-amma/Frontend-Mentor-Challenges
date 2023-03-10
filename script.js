@@ -11,6 +11,12 @@ let projects = [
     solution: "https://github.com/AMyintMyatAung/Frontend-Mentor-Challenges/tree/main/qr-code-component",
     live: "./qr-code-component/index.html",
   },
+  {
+    name: "advice-generator-app",
+    thumbnail: "./advice-generator-app/design/desktop-design.png",
+    solution: "https://github.com/AMyintMyatAung/Frontend-Mentor-Challenges/tree/main/advice-generator-app",
+    live: "./advice-generator-app/index.html",
+  },
 ];
 
 const formatProjectName = (name) => {
