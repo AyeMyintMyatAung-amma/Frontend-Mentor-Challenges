@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              glow: "0 0px 15px 10px #52ffa840;",
+              glowlg: "0 0px 20px 15px #52ffa840",
+            },
+            colors: {
+              // Primary Colors
+              lightCyan: "#cee3e9",
+              neonGreen: "#52ffa8",
+              // Neutral Colors
+              grayishBlue: "#4e5d73",
+              darkGrayishBlue: "#323a49",
+              darkBlue: "#1f2632",
+              // Attribution Link Color
+              attribution: "#3e52a3",
+            },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+            fontSize: {
+              quotemd: "1.5rem",
+              quotelg: "1.75rem",
+            },
+            width: {
+              sm: "21rem",
+              md: "33rem",
+              lg: "36rem",
+            },
+          },
+        },
+      };
+    </script>
+
+    <script src="./script.js" defer></script>
+
+  </head>
+  <body
+    class="bg-darkBlue w-full min-h-screen flex flex-col items-center justify-center"
+  >
+    <div
+      class="bg-darkGrayishBlue flex flex-col items-center gap-7 lg:gap-9 relative py-5 md:py-8 lg::py-10 rounded-xl md:rounded-2xl text-center w-sm md:w-md lg:w-lg min-h-72 shadow-lg lg:shadow-xl"
+    >
+      <!-- Advice ID goes here -->
+      <p class="text-md font-bold uppercase text-neonGreen tracking-wider">
+        Advice # <span id="adviceID">0</span>
+      </p>
+      <!-- Advice text goes here -->
+      <blockquote
+        class="text-2xl md:text-quotemd lg:text-quotelg font-extrabold leading-normal text-lightCyan mx-5 md:mx-12 lg:mx-16 font-manrope"
+      >
+        “<span id="quote">Click on the dice to get random advice.</span>”
+      </blockquote>
+      <img
+        src="./images/pattern-divider-mobile.svg"
+        alt="pattern-divider-mobile"
+        class="w-3/4 pb-10 md:hidden"
+      />
+      <img
+        src="./images/pattern-divider-desktop.svg"
+        alt="pattern-divider-desktop"
+        class="hidden md:block w-10/12 md:pb-10"
+      />
+      <div
+        id="rollDice"
+        class="absolute -bottom-8 bg-neonGreen hover:shadow-glow lg:hover:shadow-glowlg rounded-full flex justify-center items-center w-16 h-16 shadow-lg lg:shadow-xl cursor-pointer"
+      >
+        <img src="./images/icon-dice.svg" alt="dice" class="w-6 h-6" />
+      </div>
+    </div>
+
+    <div class="attribution text-center text-sm text-lightCyan mt-16">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-attribution"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/AMyintMyatAung" target="_blank" class="text-attribution">NightOwl</a>.
+    </div>
+  </body>
+</html>
