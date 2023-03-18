@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Google Fonts  -->
+    <!-- Fraunces and Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // primary
+              darkCyan: "#3c8067",
+              cream: "#f2ebe3",
+              // neutral
+              veryDarkBlue: "#1c232b",
+              darkGrayishBlue: "#6c7289",
+            },
+            fontFamily: {
+              serif: ["Fraunces", "serif"],
+              sans: ["Montsserat", "sans-serif"],
+            },
+            height: {
+              desktop: "30rem",
+            },
+            letterSpacing: {
+              custom: "0.5rem",
+            },
+            maxWidth: {
+              desktop: "4rem",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-cream h-screen">
+    <main
+      class="flex h-full min-h-max w-full flex-col items-center justify-center"
+    >
+      <article
+        class="my-5 flex w-80 flex-col shadow-md md:my-8 md:h-[35rem] md:w-[46rem] md:flex-row"
+      >
+        <img
+          src="./images/image-product-mobile.jpg"
+          alt="Photo of Gabrielle Essence Eau De Parfum"
+          class="rounded-t-xl brightness-90 md:hidden"
+        />
+        <img
+          src="./images/image-product-desktop.jpg"
+          alt=""
+          class="hidden object-cover md:block md:w-1/2 md:rounded-tl-xl md:rounded-bl-xl md:brightness-90"
+        />
+        <div
+          class="rounded-b-xl bg-white p-5 md:w-1/2 md:rounded-none md:rounded-tr-xl md:rounded-br-xl md:p-10"
+        >
+          <h3
+            class="text-darkGrayishBlue tracking-custom mb-3 text-sm uppercase md:mb-5 md:text-lg"
+          >
+            Perfume
+          </h3>
+          <h1
+            class="font-serif mb-5 text-3xl font-bold leading-7 md:mb-8 md:text-4xl md:tracking-wide"
+          >
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p
+            class="text-darkGrayishBlue mb-5 text-sm leading-6 tracking-tight md:mb-8 md:text-lg md:tracking-normal"
+          >
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <h2
+            class="font-serif text-darkCyan flex items-center gap-5 text-3xl font-bold md:text-4xl"
+          >
+            $149.99
+            <span
+              class="text-black font-sans text-sm font-normal line-through md:text-lg"
+              >$169.99</span
+            >
+          </h2>
+          <button
+            class="hover:bg-darkCyan my-5 flex w-full items-center justify-center gap-3 rounded-lg py-3 bg-[#123427] md:my-8 md:py-4"
+          >
+            <img src="./images/icon-cart.svg" alt="" / class="md:w-5">
+            <p class="text-sm font-bold tracking-wide text-white md:text-lg">
+              Add to Cart
+            </p>
+          </button>
+        </div>
+      </article>
+      <div class="attribution my-5 text-center text-sm md:text-lg">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="text-darkCyan hover:text-[#123427]"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://github.com/AMyintMyatAung"
+          class="text-darkCyan hover:text-[#123427]"
+          >NightOwl</a
+        >.
+      </div>
+    </main>
+  </body>
+</html>
