@@ -17,6 +17,12 @@ let projects = [
     solution: "https://github.com/AMyintMyatAung/Frontend-Mentor-Challenges/tree/main/advice-generator-app",
     live: "./advice-generator-app/index.html",
   },
+  {
+    name: "product-preview-card-component",
+    thumbnail: "./product-preview-card-component/design/desktop-design.png",
+    solution: "https://github.com/AMyintMyatAung/Frontend-Mentor-Challenges/tree/main/product-preview-card-component",
+    live: "./product-preview-card-component/index.html",
+  },
 ];
 
 const formatProjectName = (name) => {
