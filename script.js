@@ -23,6 +23,12 @@ let projects = [
     solution: "https://github.com/AMyintMyatAung/Frontend-Mentor-Challenges/tree/main/product-preview-card-component",
     live: "./product-preview-card-component/index.html",
   },
+  {
+    name: "news-homepage",
+    thumbnail: "./news-homepage/design/desktop-design.png",
+    solution: "https://github.com/AMyintMyatAung/Frontend-Mentor-Challenges/tree/main/news-homepage",
+    live: "./news-homepage/index.html",
+  },
 ];
 
 const formatProjectName = (name) => {
