@@ -12,7 +12,7 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
-- [Acknowledgement] (#acknowledgement)
+- [Acknowledgement](#acknowledgement)
 - [Author](#author)
 
 ## Overview
