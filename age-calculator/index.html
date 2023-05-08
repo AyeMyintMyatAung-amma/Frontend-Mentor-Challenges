@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- Google Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- cdn for Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            borderRadius: {
+              xl: "1.5rem",
+              xxl: "8rem",
+            },
+            boxShadow: {
+              glow: "0 0px 15px 10px #52ffa840;",
+              glowlg: "0 0px 20px 15px #52ffa840",
+            },
+            colors: {
+              // Primary Colors
+              primaryPurple: "#854dff",
+              primaryRed: "#ff5757",
+              // Neutral Colors
+              neutralWhite: "#f0f0f0",
+              neutralGrey: "#dbdbdb",
+              neutralSmoke: "#716f6f",
+              neutralBlack: "#141414",
+              // Attribution Link Color
+              attribution: "#3e52a3",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+            fontSize: {
+              "2xl": "1.5rem",
+            },
+            height: {
+              100: "30rem",
+            },
+            maxWidth: {
+              xxs: "8rem",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- script to calculate age -->
+    <script src="./counterAnimation.js"></script>
+    <script src="./ageCalculate.js" defer></script>
+  </head>
+  <body
+    class="bg-neutralGrey h-screen min-h-['812px'] flex flex-col justify-center gap-3"
+  >
+    <header></header>
+
+    <main
+      class="bg-white w-80 md:w-1/2 max-w-2xl h-96 md:h-100 mx-auto rounded-xl rounded-br-xxl shadow-sm px-5"
+    >
+      <form>
+        <div class="w-full flex justify-center md:justify-start gap-5 pt-5 pb-3 md:pb-5">
+          <div
+            class="tracking-wider font-semibold w-20 md:w-24 lg:w-36 flex flex-col gap-1"
+          >
+            <label id="labelDay" class="text-smtext-neutralSmoke uppercase" for="day">Day</label>
+            <input
+              class="uppercase caret-primaryPurple text-neutralBlack text-xl md:text-2xl rounded-lg border border-solid border-neutralGrey focus:border-primaryPurple p-3"
+              style="outline: none"
+              type="text"
+              id="day"
+              placeholder="DD"
+            />
+            <small id="errorDay" class="text-xs font-light mt-1 tracking-tighter text-primaryRed"></small>
+          </div>
+
+          <div
+            class="tracking-wider font-semibold w-20 md:w-24 lg:w-36 flex flex-col gap-1"
+          >
+            <label id="labelMonth" class="text-smtext-neutralSmoke uppercase" for="month">Month</label>
+            <input
+              class="uppercase caret-primaryPurple text-neutralBlack text-xl md:text-2xl rounded-lg border border-solid border-neutralGrey focus:border-primaryPurple p-3"
+              style="outline: none"
+              type="text"
+              id="month"
+              placeholder="MM"
+            />
+            <small id="errorMonth" class="text-xs font-light mt-1 tracking-tighter text-primaryRed"></small>
+          </div>
+
+          <div
+            class="tracking-wider font-semibold w-20 md:w-24 lg:w-36 flex flex-col gap-1"
+          >
+            <label id="labelYear" class="text-smtext-neutralSmoke uppercase" for="year">Year</label>
+            <input
+              class="uppercase caret-primaryPurple text-neutralBlack text-xl md:text-2xl rounded-lg border border-solid border-neutralGrey focus:border-primaryPurple p-3"
+              style="outline: none"
+              type="text"
+              id="year"
+              placeholder="YYYY"
+            />
+            <small id="errorYear" class="text-xs font-light mt-1 tracking-tighter text-primaryRed"></small>
+          </div>
+        </div>
+        <div class="relative flex items-center justify-center md:justify-end">
+          <div
+            id="submitBtn"
+            class="bg-primaryPurple hover:bg-neutralBlack p-5 rounded-full z-10"
+          >
+            <img
+              class="w-5 h-5"
+              src="./assets/images/icon-arrow.svg"
+              alt="down-arrow-submit-button"
+            />
+          </div>
+          <div class="bg-neutralGrey w-full h-px my-auto absolute z-0"></div>
+        </div>
+      </form>
+
+      <div class="h-40 md:h-72 flex flex-col justify-center gap-3 md:gap-5">
+        <h2 class="text-4xl md:text-5xl font-extrabold italic">
+          <span id="ageYears" class="text-primaryPurple mr-3 md:mr-5">--</span
+          >years
+        </h2>
+        <h2 class="text-4xl md:text-5xl font-extrabold italic">
+          <span id="ageMonths" class="text-primaryPurple mr-3 md:mr-5">--</span
+          >months
+        </h2>
+        <h2 class="text-4xl md:text-5xl font-extrabold italic">
+          <span id="ageDays" class="text-primaryPurple mr-3 md:mr-5">--</span
+          >days
+        </h2>
+      </div>
+    </main>
+
+    <footer class="text-center hidden md:block">
+      Challenge by
+      <a
+        class="text-attribution"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a class="text-attribution" href="#">Night Owl</a>.
+    </footer>
+  </body>
+</html>

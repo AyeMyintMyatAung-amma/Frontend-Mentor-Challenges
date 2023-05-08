@@ -1,0 +1,6 @@
+# Avoid uploading fonts file
+
+fonts
+
+# Avoid uploading tailwind.js file
+tailwind.js

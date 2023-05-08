@@ -29,6 +29,12 @@ let projects = [
     solution: "https://github.com/AMyintMyatAung/Frontend-Mentor-Challenges/tree/main/news-homepage",
     live: "./news-homepage/index.html",
   },
+  {
+    name: "age-calculator",
+    thumbnail: "./age-calculator/design/desktop-design.png",
+    solution: "https://github.com/AMyintMyatAung/Frontend-Mentor-Challenges/tree/main/age-calculator",
+    live: "./age-calculator/index.html",
+  },
 ];
 
 const formatProjectName = (name) => {
