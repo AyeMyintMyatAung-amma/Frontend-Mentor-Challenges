@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop-design](./design/age-calculator-desktop-view.png)
+![desktop-design](./design/desktop-design.png)
 
 ### Links
 
