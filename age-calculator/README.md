@@ -12,8 +12,8 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
-- [Acknowledgement](#acknowledgement)
 - [Author](#author)
+- [Acknowledgement](#acknowledgement)
 
 ## Overview
 
@@ -48,6 +48,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Vanilla JavaScript
 - Mobile-first workflow
 - [Tailwind](https://tailwindcss.com) - A utility-first CSS framework
 
@@ -63,11 +64,11 @@ Users should be able to:
 - [calculate-age-in-days-months-years] (https://www.omnicalculator.com/everyday-life/age-in-years-months-and-days) - Calculate the age in days, months and years
 - [chat-gpt-by-openai] (https://chat.openai.com/) -  A large language model developed by OpenAI, capable of generating human-like responses to various questions and prompts
 
-## Acknowledgement
-
-I referenced the age numbers animation from [number-counter-animation-in-pure-javascript] (https://codepen.io/Amaik/pen/ExaaLgE) by user [aakash] (https://codepen.io/Amaik). Thank you for this simple yet useful animation.
-
 ## Author
 
 - Github / [night_owl](https://github.com/AMyintMyatAung)
 - Frontend Mentor / [@AMyintMyatAung](https://www.frontendmentor.io/profile/AMyintMyatAung)
+
+## Acknowledgement
+
+I referenced the age numbers animation from [number-counter-animation-in-pure-javascript] (https://codepen.io/Amaik/pen/ExaaLgE) by user [aakash] (https://codepen.io/Amaik). Thank you for this simple yet useful animation.
