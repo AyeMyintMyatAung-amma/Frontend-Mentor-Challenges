@@ -58,11 +58,11 @@ Users should be able to:
 
 ### Useful resources
 
-- [mdn-date] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) - Read more about date() on mdn website
+- [mdn-date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) - Read more about date() on mdn website
 - [tailwind-cheat-sheet](https://nerdcave.com/tailwind-cheat-sheet) - This Tailwind cheat sheet helped me a lot while building this project due to its short but gets the point approach.
 - [tailwind-documentation](https://tailwindcss.com/docs/) - The official documentation page of Tailwind CSS
-- [calculate-age-in-days-months-years] (https://www.omnicalculator.com/everyday-life/age-in-years-months-and-days) - Calculate the age in days, months and years
-- [chat-gpt-by-openai] (https://chat.openai.com/) -  A large language model developed by OpenAI, capable of generating human-like responses to various questions and prompts
+- [calculate-age-in-days-months-years](https://www.omnicalculator.com/everyday-life/age-in-years-months-and-days) - Calculate the age in days, months and years
+- [chat-gpt-by-openai](https://chat.openai.com/) -  A large language model developed by OpenAI, capable of generating human-like responses to various questions and prompts
 
 ## Author
 
