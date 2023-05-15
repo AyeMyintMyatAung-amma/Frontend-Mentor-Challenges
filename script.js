@@ -35,6 +35,12 @@ let projects = [
     solution: "https://github.com/AMyintMyatAung/Frontend-Mentor-Challenges/tree/main/age-calculator",
     live: "./age-calculator/index.html",
   },
+  {
+    name: "expenses-chart",
+    thumbnail: "./expenses-chart/design/desktop-design.png",
+    solution: "https://github.com/AMyintMyatAung/Frontend-Mentor-Challenges/tree/main/expenses-chart",
+    live: "./expenses-chart/index.html",
+  },
 ];
 
 const formatProjectName = (name) => {
@@ -70,8 +76,8 @@ for (let i in projects) {
     <h3 class="text-indigo-600 text-xl font-semibold">${projectName}</h3>
     <img
     src="${thumbnail}"
-    alt="results-summary-component-desktop-design"
-    class="my-3 rounded rounded-lg"
+    alt="${projectName}-desktop-design"
+    class="my-3 rounded rounded-lg h-48"
   />
   <div class="flex justify-between w-full">
     <a
