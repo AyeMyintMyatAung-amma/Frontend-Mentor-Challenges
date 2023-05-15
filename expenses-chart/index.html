@@ -23,15 +23,16 @@
     <title>Frontend Mentor | Expenses chart component</title>
 
     <!-- Tailwind cdn -->
-    <script src="../tailwind.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind Config -->
     <script src="./js/tailwind.config.js"></script>
-
 
     <script src="./js/drawChart.js" defer></script>
   </head>
   <body class="bg-neutralCream">
-    <main class="w-full mt-12 flex flex-col justify-center items-center font-dmSans">
+    <main
+      class="w-full mt-12 flex flex-col justify-center items-center font-dmSans"
+    >
       <article class="w-80 md:w-[28rem] mx-auto">
         <div class="bg-primaryRed rounded-lg p-5 flex justify-between">
           <h3 class="text-neutralCream font-medium">
@@ -42,19 +43,26 @@
           <img class="w-14" src="./images/logo.svg" alt="two-circles-logo" />
         </div>
         <div class="bg-neutralOrange rounded-lg p-5 mt-5">
-          <h3 class="text-neutralDarkBrown text-xl md:text-2xl font-semibold">Spending - Last 7 days</h3>
-          <div id="chart" class="w-full h-[180px] flex justify-between mt-10">
-          </div>
+          <h3 class="text-neutralDarkBrown text-xl md:text-2xl font-semibold">
+            Spending - Last 7 days
+          </h3>
+          <div
+            id="chart"
+            class="w-full h-[180px] flex justify-between mt-10"
+          ></div>
           <div class="bg-neutralMediumBrown my-5 w-8/9 mx-auto h-px"></div>
           <div class="flex justify-between mb-3">
             <h4 class="text-neutralMediumBrown text-sm">
               Total this month
               <br class="mb-1" />
               <span class="text-neutralDarkBrown text-3xl md:text-4xl font-bold"
-                >$478.33</span>
+                >$478.33</span
+              >
             </h4>
             <h4 class="text-neutralMediumBrown text-sm text-right mt-3">
-              <span class="text-neutralDarkBrown text-md font-semibold">+2.4%</span>
+              <span class="text-neutralDarkBrown text-md font-semibold"
+                >+2.4%</span
+              >
               <br class="mb-1" />
               from last month
             </h4>
@@ -72,7 +80,10 @@
           class="text-attribution hover:text-primaryCyan"
           >Frontend Mentor</a
         >. Coded by
-        <a href="https://github.com/AMyintMyatAung" class="text-attribution hover:text-primaryCyan">Night Owl</a
+        <a
+          href="https://github.com/AMyintMyatAung"
+          class="text-attribution hover:text-primaryCyan"
+          >Night Owl</a
         >.
       </div>
     </footer>
