@@ -1,2 +1,2 @@
 # Frontend-Mentor-Challenges
-Free Challenges from Frontend Mentor Website
+Challenges I have solved from Frontend Mentor Website
